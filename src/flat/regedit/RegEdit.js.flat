@@ -71,6 +71,7 @@ class {
         external {
           if (!#{_regedit}) {
             #{_regedit} = require('regedit');
+            #{_regedit}.setExternalVBSLocation(__dirname + '/node_modules/regedit/vbs');
           }
         }
 
