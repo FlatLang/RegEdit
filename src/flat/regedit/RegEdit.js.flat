@@ -58,6 +58,12 @@ class {
     }
   }
 
+  public static setExternalVBSLocation(String location) {
+    external {
+      #{RegEditGlobal.regedit}.setExternalVBSLocation(#{location.chars.data});
+    }
+  }
+
   static async appendLog(String message) {
     logFile.getParent().mkdir()
     FileWriter(logFile):append(message + "\n\n"):close()
