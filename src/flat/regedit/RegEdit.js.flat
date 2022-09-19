@@ -1,8 +1,8 @@
 package flat/regedit
 
-import flatlang/io/File
-import flatlang/io/FileWriter
-import flatlang/datastruct/HashMap
+import flat/io/File
+import flat/io/FileWriter
+import flat/datastruct/HashMap
 
 class {
   public static async list(String[] values) -> HashMap<String, HashMap<String, Object>> {

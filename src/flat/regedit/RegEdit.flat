@@ -1,7 +1,7 @@
 package flat/regedit
 
-import flatlang/io/File
-import flatlang/datastruct/HashMap
+import flat/io/File
+import flat/datastruct/HashMap
 
 class {
   let static File logFile = File("log/registry.txt")
