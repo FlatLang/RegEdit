@@ -4,7 +4,7 @@ import flat/io/File
 import flat/datastruct/HashMap
 
 class {
-  let static File logFile = File("log/registry.txt")
+  static File logFile = File("log/registry.txt")
 
   public static async list(String value) =>
     list([value]).getOrDefault(value, { HashMap<String, Object>() })
